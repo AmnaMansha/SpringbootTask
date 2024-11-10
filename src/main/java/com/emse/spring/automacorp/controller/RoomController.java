@@ -10,6 +10,7 @@ import com.emse.spring.automacorp.services.RoomService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3010")
 @RequestMapping("/api/rooms")
 public class RoomController {
 

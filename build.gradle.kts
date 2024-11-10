@@ -2,6 +2,7 @@ plugins {
 	java
 	id("org.springframework.boot") version "3.3.4"
 	id("io.spring.dependency-management") version "1.1.6"
+	kotlin("jvm")
 }
 
 group = "com.emse.spring"
@@ -23,7 +24,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa") // libs to use JPA in your project
 	implementation("com.h2database:h2") // libs to use a H2 database
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
-
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	testImplementation("org.springframework.security:spring-security-test")
+	implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.withType<Test> {

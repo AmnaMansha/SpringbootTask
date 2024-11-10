@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3010")
 @RestController
 @RequestMapping("/api/windows")
 public class WindowController {
